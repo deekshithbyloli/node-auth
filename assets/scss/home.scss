@@ -1,0 +1,40 @@
+// This scss file is written by Aayush Kumar Gupta
+
+#home-container {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    #title{
+        span{
+            font-size: 30px;
+        }
+    }
+
+    // Buttons container
+    #btns{
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+
+        // all buttons feature
+        .btn{
+
+            color: white;
+        }
+
+        // profile btn - as named by user name
+        .profile-btn{
+            background-color: blueviolet;
+        }
+
+        // Danger button - signout
+        .signout-btn{
+            background-color: red;
+        }
+    }
+}

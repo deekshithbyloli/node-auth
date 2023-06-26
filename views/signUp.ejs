@@ -1,0 +1,63 @@
+<!-- This ejs file is written by Aayush Kumar Gupta -->
+
+<!-- External Css -->
+<link rel="stylesheet" href="/css/signUp.css">
+    
+<!-- Signup page -->
+<section id="signup_page">
+
+    <!-- Left section - User Info -->
+    <div class="left">
+        <h5>Sign Up</h5>
+        
+        <!-- Form: Post create a new user -->
+        <form action="/auth/create_new" method="post">
+            <div class="inputs">
+
+                <!-- User name -->
+                <input type="text" placeholder="name" name="name">
+                <br>
+
+                <!-- User Email -->
+                <input type="email" placeholder="email" name="email">
+                <br>
+
+                <!-- User Password -->
+                <input type="password" placeholder="Password" name="password">
+                <br>
+
+                <!-- User Confirm Password -->
+                <input type="password" placeholder="Confirm password" name="confirm_password">
+                
+            </div>
+
+            <br>
+            <!-- div to show reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Lcl52kiAAAAAA6_Mj--RKxzuQEu6x_4IopvHXHQ"></div>
+            <br>
+
+            <!-- Submit : form -->
+            <input type="submit" value="Sign up" class="signup-btn">
+        </form>
+
+        <!-- Social Authentication -->
+        <span class="social-signup-btn">
+            <p>or</p>
+            <a href="/auth/google"><i class="fa-brands fa-google"></i>SignUp with google</a>
+        </span>
+
+        <!-- GOTO Login Page -->
+        <span class="login-btn">
+            <a href="/auth/login_page">Login?</a>
+        </span>
+    </div>
+
+    <!-- Right Section  - Basic Overview -->
+    <div class="right">
+        <div class="overlay">
+            <h1>Node Js Authentication</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quibusdam deserunt! Voluptatem illo non rerum nulla modi tenetur similique soluta assumenda mollitia tempora consequatur, delectus veniam est neque eos laborum molestiae fugiat consectetur laboriosam tempore atque nam vero reprehenderit. Ratione repudiandae magni ab earum nostrum fuga pariatur facilis tempora aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam velit voluptate quaerat, qui quidem inventore sunt nam suscipit temporibus labore quia! Aliquid.</p>
+        </div>
+    </div>
+
+</section>

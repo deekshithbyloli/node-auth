@@ -1,0 +1,33 @@
+<!-- This ejs file is written by Aayush Kumar Gupta -->
+
+<!-- External Css -->
+<link rel="stylesheet" href="/css/profile.css">
+
+<!-- Profile container -->
+<div class="profile-container">
+
+    <!-- heading of page -->
+    <div class="heading">
+        <span class="name"><%= user.name %></span>
+        <span class="email"><%= user.email %></span>
+    </div>
+
+    <!-- Button continer - signout, home -->
+    <div class="btn-container">
+
+        <!-- Home btn -->
+        <div class="btn btn-home">
+            <a href="/home">Home</a>
+        </div>
+        
+        <!-- update password btn -->
+        <div class="btn btn-u-pass">
+            <a href="/auth/render_pass">Update Password</a>
+        </div>
+
+        <!-- Signout -->
+        <div class="btn btn-signout">
+            <a href="/auth/sign-out">Sign out</a>
+        </div>
+    </div>
+</div>

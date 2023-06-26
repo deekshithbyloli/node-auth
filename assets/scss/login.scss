@@ -1,0 +1,149 @@
+// this ejs file is written by Aayush Kumar Gupta
+
+// Login Page
+#login_page{
+    margin: 4% auto;
+    width: 80%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+
+    div{
+        height: auto;
+    }
+
+    // Left section
+    .left{
+        color: #FFFFFF;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 70%;
+        
+        // left section of the login card - 
+        .overlay{
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            background: #5961f9ad;
+            overflow: hidden;
+            box-sizing: border-box;
+
+            // Company Name
+            h1 {
+                font-size: 10vmax;
+                line-height: 1;
+                font-weight: 900;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
+            // Socail Authentication
+            span {
+                p {
+                    margin-top: 30px;
+                    font-weight: 900;
+                }
+
+                // Social Auth Link
+                a {
+                    background: #3b5998;
+                    color: #FFFFFF;
+                    margin-top: 10px;
+                    padding: 14px 50px;
+                    border-radius: 100px;
+                    display: inline-block;
+                    box-shadow: 0 3px 6px 1px #042d4657;
+                    text-decoration: none;
+                    
+                    i{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Right Section Link
+    .right {
+        padding: 40px;
+        overflow: hidden;
+        width: 30%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+
+        // Login heading
+        h5{
+            font-size: 50px;
+        }
+        
+        // Create new user text
+        p {
+            font-size: 14px;
+            color: #767778;
+        }
+
+        // Credentials
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 25px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #B0B3B9;
+        }
+
+        // Forgot password div
+        .forget-password {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            // forgot password link
+            a{
+                text-decoration: none;
+                color: #767778;
+            }
+        }
+
+        // Login button
+        .login-btn {
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 35px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 0;
+            outline: 0;
+            box-shadow: 0px 4px 20px 0px #49c628a6;
+            background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+        }
+
+
+    }
+
+    // For screen size 980 or less
+    @media (max-width: 980px) {
+        .right {
+            width: 100%;
+        }
+    }
+
+}
+
+// for screen size 980 or less
+@media (max-width: 980px) {
+    #login_form {
+        flex-flow: wrap;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+}

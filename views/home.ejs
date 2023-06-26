@@ -1,0 +1,21 @@
+<!-- this ejs file is written by Aayush Kumar Gupta -->
+
+<!-- External scss -->
+<link rel="stylesheet" href="css/home.css">
+
+<div id="home-container">
+
+    <!-- title of the home -->
+    <div id="title">
+        <span>Node Authentication</span>
+    </div>
+    
+    <!-- Show profile and signout btn -->
+    <div id="btns">
+        <% if(locals.user) { %>
+            <a class="btn profile-btn" href="/users/profile/<%= user.id %>"><span><%= user.name %></span></a>
+            <a class="btn signout-btn" href="/auth/sign-out">Sign Out</a>
+        <% } %>
+    </div>
+
+</div>

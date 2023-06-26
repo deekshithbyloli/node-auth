@@ -1,0 +1,55 @@
+<!-- This ejs file is written by Aayush Kumar Gupta -->
+
+<!-- External Css link -->
+<link rel="stylesheet" href="/css/login.css">
+
+<!-- Login page -->
+<div id="login_page">
+
+    <!-- Left section - Basic Overview -->
+    <div class="left">
+        <div class="overlay">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam velit voluptate quaerat, qui quidem inventore sunt nam suscipit temporibus labore quia! Aliquid.</p>
+
+            <!-- Social Authentication - Google signIn/SignUp -->
+            <span>
+                <p>Login With Social Media</p>
+                <a href="/auth/google"><i class="fa-brands fa-google"></i>Login with google</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- right section -->
+    <div class="right">
+        <h5>Login</h5>
+
+        <!-- Create a new Account - SignUp -->
+        <p>Don't have an account? <a href="/auth/signup_page">Create a new Account</a></p>
+        <form action="/auth/create_session" method="post">
+
+            <!-- Login Credentials -->
+            <div class="inputs">
+                <input type="email " placeholder="email" name="email">
+                <br>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            <br><br>
+
+            <!-- Forgot password Link -->
+            <div class="forget-password">
+                <a href="/auth/reset_pass_page">forgot password?</a>
+            </div>
+
+            <br>
+
+            <!-- div to show reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Lcl52kiAAAAAA6_Mj--RKxzuQEu6x_4IopvHXHQ"></div>
+
+            <br>
+            
+            <!-- Form submit button -->
+            <input type="submit" value="Login" class="login-btn">
+        </form>
+    </div>
+</div>

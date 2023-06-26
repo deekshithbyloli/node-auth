@@ -1,0 +1,106 @@
+********************************************** Initial Task **********************************************
+
+- Setup the application base
+
+- Created EJS ans SASS for
+    - Login page
+    - Sign up page
+
+- Connect mongoDB
+    install mongoose
+
+- create userschema in model folder
+
+********************************************** Handel Session & Authentication **********************************************
+- install Cookie-parser library
+- config cookie parser
+    - inside app.js
+- for authentication & store session in db (A subsitute for Manual Auth)
+    - passport uses express-session cookie 
+        - install express-session
+    - config passport
+        - install passport
+        - install passport-local
+        - config -> passport-local-strategy
+        - add authentication in index router
+    - initialize and save sesssion 
+        - install connect-mongo
+        - add config in app.js
+    - create auth controller
+        - create a new user
+        - render login page
+        - render signup page
+        - create session (sign in)
+        - destroy session (logout)
+    - create an auth router
+    - created a signout button in home.
+
+********************************************** write logic for google-auth **********************************************
+- Install passport-google-auth
+- install crypto
+- Register project to Google auth website and get Essential keys
+    - add these keys in config/app_key.js
+- create a strategy config file
+- create a new router.get for google auth
+- link this router to login and signup page
+
+********************************************** logic Reset password  **********************************************
+    - install nodemailer
+    - create a new model -> model/UserAccessToken.js
+    - config this nodemailer -> config/nodemailer
+    - create a mailer files -> mailers/reset_pass_mailer.js
+    - create template for reset-mail -> views/mailers/reset_password_temp.ejs
+    - create some new views
+        - invalid
+        - reset_pass_link_sent
+        - reset_password_page
+        - update_password
+    - create auth controller functions and routers
+        - render reset password page
+        - generate access token
+        - verify access token'
+        - update password
+    - features
+        - a link can be used for only one time password update
+        - a link will be expired after 5 mins
+
+***************************************************** Update Password After Login *****************************************************
+- create a link in profile for update password
+- ask for password, again
+    - if google user then pass
+    - if normal user than ask for password or forgot password
+- ask for password and confirm password
+
+
+************************************************* Add Notification ***********************************************************
+- install connect-flash
+- create config
+- add link and script for noty in layout.ejs
+- add noty in layout.ejs
+- add req.flash in all required controllers and local-auth-strategy
+
+*********************************************************** Encrypt password in mongodb *******************************************
+- update User schema
+    - add salt & hash property
+    - add setPassword method
+    - add norMatch method
+- update local-auth-strategy config
+- update auth controller
+    - create a new User
+    - update password\
+
+*********************************************************** Enable Re-captcha *******************************************
+- Install isomorphic 0- fetch
+- Generate Secret Key and site key from google.com/recaptcha
+    - add secret key in config/app_key.js
+- add cdn link in layout.ejs
+- add div for g-recaptcha in login.ejs, signup.ejs, and Update_password.ejs
+- add config for 
+    - login -> passport-local-strategy
+    - signUp -> authController
+
+*********************************************************** Add Parallel Job for mailing *******************************************
+- Install Kue
+- Setup config for kue -> config/kue
+- Create Worker
+- add worker in authController where Email need to be sent

@@ -1,0 +1,129 @@
+#signup_page {
+  margin: 5px auto;
+  width: 80%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+#signup_page div {
+  height: auto;
+}
+
+#signup_page .left {
+  padding: 40px;
+  overflow: hidden;
+  width: 30%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#signup_page .left h5 {
+  font-size: 40px;
+}
+
+#signup_page .left input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+
+#signup_page .left .signup-btn {
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 20px 0px #9128cea6;
+  background-image: linear-gradient(135deg, #cd70f5 10%, #e8248f 100%);
+}
+
+#signup_page .left .social-signup-btn p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+#signup_page .left .social-signup-btn a {
+  color: #FFFFFF;
+  padding: 14px 50px;
+  border-radius: 100px;
+  display: inline-block;
+  background: #1028c2;
+  box-shadow: 0 3px 6px 1px #042d4657;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+#signup_page .left .social-signup-btn a i {
+  margin-right: 5px;
+}
+
+#signup_page .left .login-btn {
+  margin-top: 20px;
+  margin-right: 15px;
+  text-align: end;
+}
+
+#signup_page .left .login-btn a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  #signup_page .left {
+    width: 100%;
+  }
+}
+
+#signup_page .right {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 70%;
+}
+
+#signup_page .right .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #c8992dad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#signup_page .right .overlay h1 {
+  font-size: 7vmax;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#signup_page .right .overlay p {
+  text-align: justify;
+}
+
+@media (max-width: 980px) {
+  #signup_page {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
